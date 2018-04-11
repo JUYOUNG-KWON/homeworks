@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 45px;
+  text-align: left;
+  border-bottom:1px solid gray;
+  border-right:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+li {
+  font-size: 25px;
+  margin: 0px;
+  padding:10px;
+}
+#menu {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0px;
+  padding:20px;
+  padding-left: 32px;
+}
+#main {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+#HELLO {
+  text-align: left;
+  border-bottom:1px solid gray;
+  padding: 20px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+#first {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#second {
+  padding: 25px;
+  font-size: 20px;
+}
