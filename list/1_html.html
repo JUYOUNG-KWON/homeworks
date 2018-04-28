@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML 태그의 종류</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+  </head>
+  <body>
+    <script>
+      var menu1 = ['introduction', 'directions', 'Sources'];
+      var menu2 = ['소개', '사용법', '출처'];
+      var unit1 = ['html', 'h', 'list'];
+      var unit2 = ['html', 'h', 'ul, ol, li'];
+    </script>
+    <h1><a href="../index.html">HTML</a></h1>
+    <div id="List">
+      <ul id="menu1">
+        <script>
+          var i = 0;
+          while(i < menu1.length) {
+            document.write('<li id="unit1"><a href="../' + menu1[i] + '.html">'+ menu2[i] + '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+    </div>
+    <div id="c">
+      <ul id="menu2">
+        <script>
+          var i = 0;
+          while(i < unit1.length) {
+            document.write('<li id="unit2"><a href="1_'+ unit1[i] + '.html">' + unit2[i]+ '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+        <div id="d">
+          <img src="../res/html.jpg"/>
+          <div>
+            <p>&lt;html&gt;과 &lt;/html&gt;사이의 문자는 웹 페이지를 표현한다.</p>
+            <p>&lt;body&gt;와 &lt;body&gt;사이의 문자는 보여지는 페이지 내용이며, </p>
+            <p>&lt;head&gt;와 &lt;/head&gt;사이의 문자는 눈에는 보이지 않지만 웹 페이지를 표현하기위해 필요한 해더 정보를 담고 있다.</p>
+            <p>&lt;title&gt;과 &lt;/title&gt;사이의 문자는 웹 브라우저의 페이지 제목을 정의하는데 사용된다.</p>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

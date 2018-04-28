@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+  </head>
+  <body>
+    <script>
+      var menu1 = ['introduction', 'directions', 'Sources'];
+      var menu2 = ['소개', '사용법', '출처'];
+      var unit1 = ['introduction', 'History','MarkUp', 'CSS', 'JavaScript'];
+    </script>
+    <h1><a href="index.html">HTML</a></h1>
+    <div id="List">
+      <ul id="menu1">
+        <script>
+          var i = 0;
+          while(i < menu1.length) {
+            document.write('<li id="unit1"><a href="' + menu1[i] + '.html">'+ menu2[i] + '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+    </div>
+    <div id="c">
+      <ul id="menu2">
+        <script>
+          var i = 0;
+          while(i < unit1.length) {
+            document.write('<li id="unit2"><a href="'+ unit1[i] + '.html">' + unit1[i] + '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+        <div id="b">
+          <h2>HTML의 역사</h2>
+          <p><h3>개발</h3></p>
+          <p>팀 버너스리<p/>
+          <p>1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다.</P>
+          <p>인콰이어는 CERN의 연구원들이 문서를 이용하고 공유하기 위한 체계였다. </P>
+          <p>1989년에 팀 버너스리는 인터넷 기반 하이퍼텍스트 체계를 제안하는 메모를 작성했다.</P>
+          <p>버너스 리는 1990년 말에 HTML을 명시하고, 브라우저와 서버 소프트웨어를 작성했다.</P>
+          <p>그 해에 버너스리와 CERN 데이터 시스템 엔지니어 로버트 카일리아우와 함께 CERN측에 자금 지원을 요청하였지만, 이 프로젝트는 CERN으로부터 정식으로 채택 받지 못했다.</P>
+          <p>버너스리의 개인적인 기록 [3] 에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다.</P>
+        </div>
+    </div>
+  </body>
+</html>

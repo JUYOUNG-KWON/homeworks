@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarkUp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+  </head>
+  <body>
+    <script>
+      var menu1 = ['introduction', 'directions', 'Sources'];
+      var menu2 = ['소개', '사용법', '출처'];
+      var unit1 = ['introduction', 'History','MarkUp', 'CSS', 'JavaScript'];
+    </script>
+    <h1><a href="index.html">HTML</a></h1>
+    <div id="List">
+      <ul id="menu1">
+        <script>
+          var i = 0;
+          while(i < menu1.length) {
+            document.write('<li id="unit1"><a href="' + menu1[i] + '.html">'+ menu2[i] + '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+    </div>
+    <div id="c">
+      <ul id="menu2">
+        <script>
+          var i = 0;
+          while(i < unit1.length) {
+            document.write('<li id="unit2"><a href="'+ unit1[i] + '.html">' + unit1[i] + '</a></li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+        <div id="b">
+          <h2>MarkUp언어</h2>
+          <P>HTML 마크업은 HTML 요소(엘리먼트, Elements)와 그들의 속성(Attributes)과 문자 기반 데이터 형태와 문자 참조와 엔티티 참조를 포함하는 몇 가지 핵심 구성 요소로 이루어져 있다.</P>
+          <P>또 다른 중요한 구성 요소로는 문서 형식 정의(DTD, Document Type Definition)를 명시하는 문서 형식 선언(document type declaration)이다.</P>
+          <P>차기 HTML 5에서는 DTD를 지정하지 않아도 되고 오직 레이아웃 모드로 지정된다.</P>
+          <p><h2>MarkDown언어</h2></p>
+          <p>마크업 언어외에 마크다운이란 언어도 있다.</p>
+          <p>마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법이다.</p>
+          <p>README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다.</P>
+          <p>마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능하다.</p>
+        </div>
+    </div>
+  </body>
+</html>
